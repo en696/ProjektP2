@@ -1,0 +1,58 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stilton
+  namespace: projekt
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: cheese
+    task: stilton
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cheddar
+  namespace: projekt
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: cheese
+    task: cheddar
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wensleydale
+  namespace: projekt
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: cheese
+    task: wensleydale
+    
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  namespace: projekt
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: cheese
+    task: nginx
+
