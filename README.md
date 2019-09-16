@@ -34,12 +34,16 @@
 
 <h3>kubectl describe  pod  traefik-ingress-controller-8c8b85bbc-hqpf4 -n kube-system</h3>
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/grep-traefik.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-ingress-controller-8c8b85bbc-hqpf4.png)
 
 <h3>kubectl apply -f ui.yaml</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ui.yaml.png)
 
 <h3>kubectl get svc traefik-web-ui -n kube-system</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-web-ui.png)
 
 <h3>kubectl get ingress -n kube-system</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get-ingress.png)
