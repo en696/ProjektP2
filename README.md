@@ -18,6 +18,16 @@
 
 <h3>kubectl get svc traefik-ingress-service -n kube-system</h3>
 
-
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get_svc_traefik-ingress-service.png)
 
 <h3>kubectl describe svc traefik-ingress-service -n kube-system</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describe-svc-traefik-ingres-controler.png)
+
+<h3>kubectl get serviceaccount traefik-ingress-controller -n  kube-system</h3>
+
+
+<h3>kubectl get pod -n kube-system | grep traefik</h3>
+
+
+<h3>kubectl get pod -n kube-system | grep traefik</h3>
