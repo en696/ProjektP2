@@ -50,18 +50,24 @@
 
 <h3>edomin.pl</h3>
 
-
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edomin.pl.png)
 
 <h3>kubectl apply -f cheese-deployments.yaml</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/cheese-deployments.yaml.png)
 
 <h3>kubectl get deployment -n projekt</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getdeployment.png)
 
 <h3>kubectl get pod -n projekt</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getpodnprojekt.png)
 
 <h3>kubectl apply -f cheese-services.yaml</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/fcheese-services.yaml.png)
 
 <h3>kubectl get svc -n projekt</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
