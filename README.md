@@ -47,3 +47,21 @@
 <h3>kubectl get ingress -n kube-system</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get-ingress.png)
+
+<h3>edomin.pl</h3>
+
+
+
+<h3>kubectl apply -f cheese-deployments.yaml</h3>
+
+
+<h3>kubectl get deployment -n projekt</h3>
+
+
+<h3>kubectl get pod -n projekt</h3>
+
+
+<h3>kubectl apply -f cheese-services.yaml</h3>
+
+
+<h3>kubectl get svc -n projekt</h3>
