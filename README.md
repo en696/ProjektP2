@@ -80,7 +80,6 @@
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get-ingress.png)
 
-
 <h3>kubectl describe ingress cheeses -n projekt</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingresscheeses.png)
@@ -88,3 +87,13 @@
 <h3>edomin.pl</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png)
+
+<h3>kubectl create namespace jenkins</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png)
+
+<h3>kubectl apply -f jenkins-deploy.yaml</h3>
+
+<h3>kubectl get pod -n jenkins</h3>
+
+<h3>kubectl get svc -n jenkins</h3>
