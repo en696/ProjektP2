@@ -90,10 +90,24 @@
 
 <h3>kubectl create namespace jenkins</h3>
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespacejenkins.png)
 
 <h3>kubectl apply -f jenkins-deploy.yaml</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins-deploy.yaml.png)
+
 <h3>kubectl get pod -n jenkins</h3>
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/podnjenkins.png)
+
 <h3>kubectl get svc -n jenkins</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/svcnjenkins.png)
+
+<h3>kubectl get ingress -n jenkins</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngressjenkins.png)
+
+<h3>kubectl describe ingress -n jenkins</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingress.png)
