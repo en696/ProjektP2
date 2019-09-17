@@ -112,6 +112,12 @@
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingress.png)
 
+<h3>edomin.pl</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkinsedomin.png)
+
 dodałem wpis do /etc/hosts
 35.246.27.48  jenkins.edomin.pl
 jenkins.edomin.pl
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
