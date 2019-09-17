@@ -9,7 +9,7 @@ dzięki temu poleceniu możemy zobaczyć wszystkie nody które tworzy klaster ku
 
 <h3>kubectl get node</h3
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getnode.jpg)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getnode.png)
 
 <h3>kubectl create namespace projekt</h3>
 
