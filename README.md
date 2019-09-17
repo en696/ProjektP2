@@ -118,6 +118,7 @@
 
 dodałem wpis do /etc/hosts
 35.246.27.48  jenkins.edomin.pl
-jenkins.edomin.pl
+
+<h3>jenkins.edomin.pl</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
