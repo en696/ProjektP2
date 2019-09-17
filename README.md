@@ -111,3 +111,7 @@
 <h3>kubectl describe ingress -n jenkins</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingress.png)
+
+dodałem wpis do /etc/hosts
+35.246.27.48  jenkins.edomin.pl
+jenkins.edomin.pl
