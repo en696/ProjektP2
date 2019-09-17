@@ -87,4 +87,4 @@
 
 <h3>edomin.pl</h3>
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png)
