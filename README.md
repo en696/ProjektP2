@@ -106,7 +106,7 @@
 
 <h3>kubectl get ingress -n jenkins</h3>
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngressjenkins.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ingressjenkins.png)
 
 <h3>kubectl describe ingress -n jenkins</h3>
 
