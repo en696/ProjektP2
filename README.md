@@ -71,3 +71,20 @@
 <h3>kubectl get svc -n projekt</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
+
+<h3>kubectl apply -f cheeses-ingress.yaml</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
+
+<h3>kubectl get ingress -n projekt</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
+
+
+<h3>kubectl describe ingress cheeses -n projekt</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
+
+<h3>edomin.pl</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png
