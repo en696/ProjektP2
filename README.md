@@ -1,5 +1,12 @@
 # ProjektP2
 
+
+<b>gcloud compute instances list</b>
+dzięki temu poleceniu możemy zobaczyć wszystkie nody które tworzy klaster kubernetesa i jakie adresy ip maja. każdy node ma adres publiczny dzięki czemu możemy się zalogować poprzez ssh do każdego noda z osobna
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespaces-projekt.jpg)
+
+
 <h3>kubectl create namespace projekt</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespaces-projekt.jpg)
