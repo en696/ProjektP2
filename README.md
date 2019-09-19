@@ -73,35 +73,51 @@ Możemy zobaczyć wiecej szczegłow o podzie i zobaczyc jego adres wewnetrzny
 
 <h3>kubectl apply -f ui.yaml</h3>
 
-Tworze ingresa oraz service dla dashborda 
+Tworze ingresa oraz service dla dashborda
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ui.yaml.png)
 
 <h3>kubectl get svc traefik-web-ui -n kube-system</h3>
 
+Mozemy zaopserwować stworzony service typu clusterIP który zapewni na dostep do dashborda  
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-web-ui.png)
 
 <h3>kubectl get ingress -n kube-system</h3>
+
+Mozemy zobaczyć na jakiego hosta zapinamy nasz dashbord
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get-ingress.png)
 
 <h3>edomin.pl</h3>
 
+Tak wyglada nasz dashbord
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edomin.pl.png)
 
 <h3>kubectl apply -f cheese-deployments.yaml</h3>
+
+Tworzymy deployment 3 prostych aplikacji którzy wystawiaja tylko jedna podstronę
+kazdy depolyment zaweira 2 pody.
+Tworze rowniez deploy nginix który wyswietla nazwe hostnama oraz adres ip poda  
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/cheese-deployments.yaml.png)
 
 <h3>kubectl get deployment -n projekt</h3>
 
+Mozemy zobaczy utworzone działajace depolymeny
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getdeployment.png)
 
 <h3>kubectl get pod -n projekt</h3>
 
+Możemy zobaczyc działajace pody w namespaces projekcie  
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getpodnprojekt.png)
 
 <h3>kubectl apply -f cheese-services.yaml</h3>
+
+Tworzymy service dla tych depolymentów
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/fcheese-services.yaml.png)
 
