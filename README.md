@@ -1,17 +1,23 @@
 # ProjektP2
 
+<h1>Instalacj oraz konfiguracja clastra</h1>
 
 <h3>gcloud compute instances list</h3>
 dzięki temu poleceniu możemy zobaczyć wszystkie nody które tworzy klaster kubernetesa i jakie adresy ip maja. każdy node ma adres publiczny dzięki czemu możemy się zalogować poprzez ssh do każdego noda z osobna
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/gcloudcoumpute.png)
 
-
 <h3>kubectl get node</h3
+
+Te polecenie rownież wylistuje nam nody ale te polecenie jest wbudowane w cluster kubernetesa
+i pozwoli wyswietlić jak dawno node został dodany, jego status czy jest sprawny oraz wersje kubernetesa
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getnode.png)
 
+
 <h3>kubectl create namespace projekt</h3>
+
+Stworzyłem nowy namespaces dla naszego projektu
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespaces-projekt.jpg)
 
