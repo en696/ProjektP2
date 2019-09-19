@@ -21,23 +21,37 @@ Stworzyłem nowy namespaces dla naszego projektu
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespaces-projekt.jpg)
 
+#dopisac
+
 <h3>kubectl apply -f traefik-rbac.yaml</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/rbc.png)
 
 <h3>kubectl get secret traefik-ingress-controller-token-cftk6</h3>
 
+#dopisac
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-ingress-controller-token-cftk6.png)
 
 <h3>kubectl apply -f traefik-ingress-controller.yaml</h3>
+
+Stworzyłem ingres kontroler który zawiera Service i Deployment i znajduje sie w namespace kube-system dla wiekszego bezpieczenstwa aby zwykły urzytkownik nie mógł go skasować.
+Jako ingres kontrolera uzyłem traefika.
+Kontener wystawia dwa porty 80 do usług http oraz 8080 do zarzadzania do dashborda
+Tworzymy usługe typu loadbalanser
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-ingress-controller.png)
 
 <h3>kubectl get svc traefik-ingress-service -n kube-system</h3>
 
+Sprawdzamy usługe loadbalanser . która została utworzona przez google cloud mozemy zobaczyć adres publiczny takiej usługi
+Jak widzimy utworzenie servica typu loudbalanser automatycznie utwoczyło cluster IP oraz zmapowało porty do usługi
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get_svc_traefik-ingress-service.png)
 
 <h3>kubectl describe svc traefik-ingress-service -n kube-system</h3>
+
+Możemy zobaczyc bardziej szczegółowe informacje odnosnie loaudbalansera
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describe-svc-traefik-ingres-controler.png)
 
@@ -47,13 +61,19 @@ Stworzyłem nowy namespaces dla naszego projektu
 
 <h3>kubectl get pod -n kube-system | grep traefik</h3>
 
+Możemy zobaczyć działajacego poda z ingrescontrolerem
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/grep-traefik.png)
 
 <h3>kubectl describe  pod  traefik-ingress-controller-8c8b85bbc-hqpf4 -n kube-system</h3>
 
+Możemy zobaczyć wiecej szczegłow o podzie i zobaczyc jego adres wewnetrzny
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-ingress-controller-8c8b85bbc-hqpf4.png)
 
 <h3>kubectl apply -f ui.yaml</h3>
+
+Tworze ingresa oraz service dla dashborda 
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ui.yaml.png)
 
