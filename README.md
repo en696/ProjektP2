@@ -262,3 +262,17 @@ Odpalamyna hoscie gke-standard-cluster-2-default-pool-7e1dffd4-jdfl polecenie tc
 i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
+
+
+<h3>tcpdump -vvv -i cbr0 port 80</h3>
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
+
+Teraz widać że jest uzywany ingress który rozrzuci nam ruch na rozne pody ingres wie do których serviców ma sie skietować
+
+
+Zeby zobaczyc co dzieje sie dalej potrzebujemy wejsc to contenera z aplikacja
+
+docker ps -a| grep nginx-hello
+
+docker exec -it f281dfd6c9a7  sh
