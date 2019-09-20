@@ -247,15 +247,18 @@ Wykonuje curla z gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 	 na gke-stan
 curl 10.154.0.3:32708
 w ten sposób pokazuje iz kiedy przejdziemy juz przez loudbalanser mamy utworzony NodeIp
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/installtcpdump.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/curl10.54.0.3.png)
 
-Usługa jest rowniez dostepna po przez adresy ip hosta oraz port nodaport który mozemy zobaczyc tutaj 
+Usługa jest rowniez dostepna po przez adresy ip hosta oraz port nodaport który mozemy zobaczyc tutaj
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describe-svc-traefik-ingres-controler.png)
 
-Odpalamy polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
+Adresy ip prywatne hostów i publiczne
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/googcloudssh.png)
+
+
+Odpalamyna hoscie gke-standard-cluster-2-default-pool-7e1dffd4-jdfl polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
 i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
-
-sudo apt-get install dnsutils
