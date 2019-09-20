@@ -123,37 +123,51 @@ Tworzymy service dla tych depolymentów
 
 <h3>kubectl get svc -n projekt</h3>
 
+Mozrmy zobaczyć wszystkie servicy który utworzyłem dla deploymentów
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getsvcnprojekt.png)
 
 <h3>kubectl apply -f cheeses-ingress.yaml</h3>
 
+Tworze ingresa do service który pozwala dodac dla domeny edomin path dla poszczegolnych applikacji
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/cheeses-ingress.yaml.png)
 
-<h3>kubectl get ingress -n projekt</h3>
-
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get-ingress.png)
 
 <h3>kubectl describe ingress cheeses -n projekt</h3>
+
+Sprawdzam konfiguracje ingresa pathy dla domeny edomin.pl
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingresscheeses.png)
 
 <h3>edomin.pl</h3>
 
+Mozna teraz zobaczyć ze nasze usługi dodały się do naszego ingrsa i mozemy zobaczyc te aplikacje z pozimu dashborda
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/edominv2.png)
 
 <h3>kubectl create namespace jenkins</h3>
+
+Teraz zrobie depoly jeszcze jednej aplikacji tzn jenkina
+zaczne od stworzenia własnego namespacesa
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespacejenkins.png)
 
 <h3>kubectl apply -f jenkins-deploy.yaml</h3>
 
+Tworze depoly jenkina z 1 podem oraz tworze service i nowa usługe ingres
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins-deploy.yaml.png)
 
 <h3>kubectl get pod -n jenkins</h3>
 
+Sprawdzam czy usługa juz wystartowała i czy działa poprawnie
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/podnjenkins.png)
 
 <h3>kubectl get svc -n jenkins</h3>
+
+
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/svcnjenkins.png)
 
@@ -175,3 +189,6 @@ dodałem wpis do /etc/hosts
 <h3>jenkins.edomin.pl</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
+
+
+sudo apt-get install dnsutils
