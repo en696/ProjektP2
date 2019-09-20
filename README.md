@@ -209,10 +209,10 @@ curl edomin.pl/nginx
 Sprawdzam czy loudbalanser działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
 
 Pierwsza próba
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix1.png)
 
 Druga próba
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix2.png)
 
 Przesledze teraz droge jaka nasz komputer musi pokonać aby odpowiedziała mu aplikacja
 
@@ -220,9 +220,10 @@ domena edomin została zakupiona w home.pl i został tam utworzony rekord A dla 
 
 adress 35.246.27.48 to adres loudbalansera utworzonego w google cloud
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
 
 Widać na obrazku ze adres ten został zapiety dla trzech maszyn wirtualnych które tworza cluster kubernetesa.
+
 
 
 
