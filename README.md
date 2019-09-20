@@ -200,7 +200,7 @@ Zobacze czy strona wyswietla sie prawidłowo
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
 
 
-###Jak działa loudbalanser
+### Jak działa loudbalanser
 
 
 sudo apt-get install dnsutils
