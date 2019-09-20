@@ -243,6 +243,9 @@ apt install tcpdump -y
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
 
+Odpalamy polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
+i widzimy ze publiczny adress przechodzi przez interfejs eth0
+
 
 
 sudo apt-get install dnsutils
