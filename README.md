@@ -266,7 +266,7 @@ i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
 <h3>tcpdump -vvv -i cbr0 port 80</h3>
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/nginxingressczech.png)
 
 Teraz widać że jest uzywany ingress który rozrzuci nam ruch na rozne pody ingres wie do których serviców ma sie skietować
 
@@ -275,7 +275,7 @@ Zeby zobaczyc co dzieje sie dalej potrzebujemy wejsc do contenera z aplikacja
 
 docker ps -a| grep nginx-hello
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/find.png)
 
 docker exec -it f281dfd6c9a7  sh
 
