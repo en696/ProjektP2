@@ -243,6 +243,16 @@ apt install tcpdump -y
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/installtcpdump.png)
 
+Wykonuje curla z gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 	 na gke-standard-cluster-2-default-pool-7e1dffd4-jdfl 	 
+curl 10.154.0.3:32708
+w ten sposób pokazuje iz kiedy przejdziemy juz przez loudbalanser mamy utworzony NodeIp
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/installtcpdump.png)
+
+Usługa jest rowniez dostepna po przez adresy ip hosta oraz port nodaport który mozemy zobaczyc tutaj 
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describe-svc-traefik-ingres-controler.png)
+
 Odpalamy polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
 i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
