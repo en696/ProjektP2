@@ -208,6 +208,8 @@ curl edomin.pl/nginx
 
 Sprawdzam czy loudbalanser działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
 
+lynx http://edomin.pl/nginx
+
 <h3>Pierwsza próba</h3>
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix1.png)
@@ -222,10 +224,24 @@ domena edomin została zakupiona w home.pl i został tam utworzony rekord A dla 
 
 adress 35.246.27.48 to adres loudbalansera utworzonego w google cloud
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
-
 Widać na obrazku ze adres ten został zapiety dla trzech maszyn wirtualnych które tworza cluster kubernetesa.
 
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+
+Teraz zaloguje sie do maszyny wirtualnej gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 przez ssh , aby moc pokazać jak dalej wyglada droga naszego curla a adres curl edomin.pl/nginx
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+
+Aby uzyskać wiekszy dostep do dodatkowych narzedi takich jak tcpdump nalezy wykonoć polecenie /usr/bin/toolbox
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+
+Teraz mozemy zainstalowac tcpdumpa
+
+apt update -y
+apt install tcpdump -y
+
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
 
 
 
