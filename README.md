@@ -202,5 +202,10 @@ Zobacze czy strona wyswietla sie prawidłowo
 
 ### Jak działa loudbalanser
 
+Wykonuje polecenie curl z własnego pc na adress domeny edomin.pl aby zasymulować wywołoanie naszy aplikacji zapietych na roznych /patch
+
+curl edomin.pl/nginx
+
+Sprawdzam czy loudbalanser działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić 
 
 sudo apt-get install dnsutils
