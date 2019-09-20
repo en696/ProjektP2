@@ -167,17 +167,23 @@ Sprawdzam czy usługa juz wystartowała i czy działa poprawnie
 
 <h3>kubectl get svc -n jenkins</h3>
 
-
+Sprawdzam konfiguracje service mozemy zobaczyc ze jenkins działa na niestandardowym porcie 8080
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/svcnjenkins.png)
 
 <h3>kubectl get ingress -n jenkins</h3>
 
+Sprawdzam konfiguracje ingresa
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ingressjenkins.png)
 
 <h3>kubectl describe ingress -n jenkins</h3>
 
+Widać ze ingres w tym przypadku działa inaczej niz w wczesniej wdrozonch aplikacjiach ponieważ tutaj ingres nie działa na pathie a na subdomenie
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingress.png)
+
+Sprawdzam czy ingres poprawnie sie zapioł dla aplikacji jenkins i czy widac ja z dashborda
 
 <h3>edomin.pl</h3>
 
@@ -186,9 +192,15 @@ Sprawdzam czy usługa juz wystartowała i czy działa poprawnie
 dodałem wpis do /etc/hosts
 35.246.27.48  jenkins.edomin.pl
 
+
 <h3>jenkins.edomin.pl</h3>
 
+Zobacze czy strona wyswietla sie prawidłowo
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
+
+
+###Jak działa loudbalanser
 
 
 sudo apt-get install dnsutils
