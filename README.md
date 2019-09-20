@@ -45,7 +45,7 @@ Tworzymy usługe typu loadbalanser
 <h3>kubectl get svc traefik-ingress-service -n kube-system</h3>
 
 Sprawdzamy usługe loadbalanser . która została utworzona przez google cloud mozemy zobaczyć adres publiczny takiej usługi
-Jak widzimy utworzenie servica typu loudbalanser automatycznie utwoczyło cluster IP oraz zmapowało porty do usługi
+Jak widzimy utworzenie servica typu Load balance automatycznie utwoczyło cluster IP oraz zmapowało porty do usługi
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/get_svc_traefik-ingress-service.png)
 
@@ -200,13 +200,13 @@ Zobacze czy strona wyswietla sie prawidłowo
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
 
 
-### Jak działa loudbalanser
+### Jak działa Load balancing
 
 Wykonuje polecenie curl z własnego pc na adress domeny edomin.pl aby zasymulować wywołoanie naszy aplikacji zapietych na roznych /patch
 
 curl edomin.pl/nginx
 
-Sprawdzam czy loudbalanser działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
+Sprawdzam czy Load balancer działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
 
 lynx http://edomin.pl/nginx
 
@@ -222,7 +222,7 @@ Przesledze teraz droge jaka nasz komputer musi pokonać aby odpowiedziała mu ap
 
 domena edomin została zakupiona w home.pl i został tam utworzony rekord A dla adresu 35.246.27.48
 
-adress 35.246.27.48 to adres loudbalansera utworzonego w google cloud
+adress 35.246.27.48 to adres Load balancera utworzonego w google cloud
 
 Widać na obrazku ze adres ten został zapiety dla trzech maszyn wirtualnych które tworza cluster kubernetesa.
 
@@ -245,7 +245,7 @@ apt install tcpdump -y
 
 Wykonuje curla z gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 	 na gke-standard-cluster-2-default-pool-7e1dffd4-jdfl 	 
 curl 10.154.0.3:32708
-w ten sposób pokazuje iz kiedy przejdziemy juz przez loudbalanser mamy utworzony NodeIp
+w ten sposób pokazuje iz kiedy przejdziemy juz przez Load balancing mamy utworzony NodeIp
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/curl10.54.0.3.png)
 
@@ -269,7 +269,6 @@ i widzimy ze publiczny adress przechodzi przez interfejs eth0
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/nginxingressczech.png)
 
 Teraz widać że jest uzywany ingress który rozrzuci nam ruch na rozne pody ingres wie do których serviców ma sie skietować
-
 
 Zeby zobaczyc co dzieje sie dalej potrzebujemy wejsc do contenera z aplikacja
 
