@@ -209,9 +209,11 @@ curl edomin.pl/nginx
 Sprawdzam czy loudbalanser działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
 
 <h3>Pierwsza próba</h3>
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix1.png)
 
 <h3>Druga próba</h3>
+
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix2.png)
 
 Przesledze teraz droge jaka nasz komputer musi pokonać aby odpowiedziała mu aplikacja
