@@ -230,22 +230,22 @@ Widać na obrazku ze adres ten został zapiety dla trzech maszyn wirtualnych kt�
 
 Teraz zaloguje sie do maszyny wirtualnej gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 przez ssh , aby moc pokazać jak dalej wyglada droga naszego curla a adres curl edomin.pl/nginx
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/logowanie-ssh.png)
 
 Aby uzyskać wiekszy dostep do dodatkowych narzedi takich jak tcpdump nalezy wykonoć polecenie /usr/bin/toolbox
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/toolbox.png)
 
 Teraz mozemy zainstalowac tcpdumpa
 
 apt update -y
 apt install tcpdump -y
 
-![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/installtcpdump.png)
 
 Odpalamy polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
 i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
-
+![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
 
 sudo apt-get install dnsutils
