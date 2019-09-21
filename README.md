@@ -10,7 +10,7 @@ dzięki temu poleceniu możemy zobaczyć wszystkie nody które tworzy klaster ku
 <h3>kubectl get node</h3
 
 Te polecenie rownież wylistuje nam nody ale te polecenie jest wbudowane w cluster kubernetesa
-i pozwoli wyswietlić jak dawno node został dodany, jego status czy jest sprawny oraz wersje kubernetesa
+i pozwoli wyświetlić jak dawno node został dodany, jego status czy jest sprawny oraz wersje kubernetesa
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/getnode.png)
 
@@ -21,7 +21,6 @@ Stworzyłem nowy namespaces dla naszego projektu
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/namespaces-projekt.jpg)
 
-#dopisac
 
 <h3>kubectl apply -f traefik-rbac.yaml</h3>
 
@@ -29,13 +28,12 @@ Stworzyłem nowy namespaces dla naszego projektu
 
 <h3>kubectl get secret traefik-ingress-controller-token-cftk6</h3>
 
-#dopisac
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/traefik-ingress-controller-token-cftk6.png)
 
 <h3>kubectl apply -f traefik-ingress-controller.yaml</h3>
 
-Stworzyłem ingres kontroler który zawiera Service i Deployment i znajduje sie w namespace kube-system dla wiekszego bezpieczenstwa aby zwykły urzytkownik nie mógł go skasować.
+Stworzyłem ingres kontroler który zawiera Service i Deployment i znajduje sie w namespace kube-system dla większego bezpieczeństwa aby zwykły użytkownik nie mógł go skasować.
 Jako ingres kontrolera uzyłem traefika.
 Kontener wystawia dwa porty 80 do usług http oraz 8080 do zarzadzania do dashborda
 Tworzymy usługe typu loadbalanser
@@ -179,11 +177,11 @@ Sprawdzam konfiguracje ingresa
 
 <h3>kubectl describe ingress -n jenkins</h3>
 
-Widać ze ingres w tym przypadku działa inaczej niz w wczesniej wdrozonch aplikacjiach ponieważ tutaj ingres nie działa na pathie a na subdomenie
+Widać ze ingres w tym przypadku działa inaczej niz w wcześniej wdrożonych aplikacjach ponieważ tutaj ingres nie działa na pathie a na subdomenie
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describeingress.png)
 
-Sprawdzam czy ingres poprawnie sie zapioł dla aplikacji jenkins i czy widac ja z dashborda
+Sprawdzam czy ingres poprawnie sie zapiął dla aplikacji jenkins i czy widać ja z dashborda
 
 <h3>edomin.pl</h3>
 
@@ -195,18 +193,18 @@ dodałem wpis do /etc/hosts
 
 <h3>jenkins.edomin.pl</h3>
 
-Zobacze czy strona wyswietla sie prawidłowo
+Zobaczę czy strona wyświetla sie prawidłowo
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/jenkins.pl.png)
 
 
 ### Jak działa Load balancing
 
-Wykonuje polecenie curl z własnego pc na adress domeny edomin.pl aby zasymulować wywołoanie naszy aplikacji zapietych na roznych /patch
+Wykonuje polecenie curl z własnego pc na adress domeny edomin.pl aby zasymulować wywołanie  aplikacji zapiętych na różnych /path
 
 curl edomin.pl/nginx
 
-Sprawdzam czy Load balancer działa prawidłowo i czy działa runrobin. usługa nginix zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
+Sprawdzam czy Load balancer działa prawidłowo i czy działa round robin. usługa nginx zwraca adres ip poda oraz hostname wiec nadaje sie idealnie do tego aby to sprawdzić
 
 lynx http://edomin.pl/nginx
 
@@ -218,13 +216,13 @@ lynx http://edomin.pl/nginx
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/ngnix2.png)
 
-Przesledze teraz droge jaka nasz komputer musi pokonać aby odpowiedziała mu aplikacja
+Prześledzę teraz drogę jaka nasz komputer musi pokonać aby odpowiedziała mu aplikacja
 
 domena edomin została zakupiona w home.pl i został tam utworzony rekord A dla adresu 35.246.27.48
 
 adress 35.246.27.48 to adres Load balancera utworzonego w google cloud
 
-Widać na obrazku ze adres ten został zapiety dla trzech maszyn wirtualnych które tworza cluster kubernetesa.
+Widać na obrazku ze adres ten został zapięty dla trzech maszyn wirtualnych które tworzą cluster kubernetesa.
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/35.246.27.48.png)
 
@@ -232,11 +230,11 @@ Teraz zaloguje sie do maszyny wirtualnej gke-standard-cluster-2-default-pool-7e1
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/logowanie-ssh.png)
 
-Aby uzyskać wiekszy dostep do dodatkowych narzedi takich jak tcpdump nalezy wykonoć polecenie /usr/bin/toolbox
+Aby uzyskać większy dostep do dodatkowych narzędzi takich jak tcpdump należy wykonać polecenie /usr/bin/toolbox
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/toolbox.png)
 
-Teraz mozemy zainstalowac tcpdumpa
+Teraz możemy zainstalować tcpdumpa
 
 apt update -y
 apt install tcpdump -y
@@ -245,11 +243,11 @@ apt install tcpdump -y
 
 Wykonuje curla z gke-standard-cluster-2-default-pool-7e1dffd4-8vc2 	 na gke-standard-cluster-2-default-pool-7e1dffd4-jdfl 	 
 curl 10.154.0.3:32708
-w ten sposób pokazuje iz kiedy przejdziemy juz przez Load balancing mamy utworzony NodeIp
+w ten sposób pokazuje iz kiedy przejdziemy już przez Load balancing mamy utworzony Nodeport
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/curl10.54.0.3.png)
 
-Usługa jest rowniez dostepna po przez adresy ip hosta oraz port nodaport który mozemy zobaczyc tutaj
+Usługa jest również dostępna po przez adresy ip hosta oraz port nodaport który możemy zobaczyć tutaj
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/describe-svc-traefik-ingres-controler.png)
 
@@ -258,7 +256,7 @@ Adresy ip prywatne hostów i publiczne
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/googcloudssh.png)
 
 
-Odpalamyna hoscie gke-standard-cluster-2-default-pool-7e1dffd4-jdfl polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
+Odpalam na  hoscie gke-standard-cluster-2-default-pool-7e1dffd4-jdfl polecenie tcpdump -vvv -i eth0 src host 35.246.27.48 and port 80   
 i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/checkport.png)
@@ -268,9 +266,9 @@ i widzimy ze publiczny adress przechodzi przez interfejs eth0
 
 ![Diagram](https://github.com/en696/ProjektP2/blob/master/obrazki/nginxingressczech.png)
 
-Teraz widać że jest uzywany ingress który rozrzuci nam ruch na rozne pody ingres wie do których serviców ma sie skietować
+Teraz widać że jest używany ingress który rozrzuci nam ruch na różne pody ingres wie do których serviców ma się skierować
 
-Zeby zobaczyc co dzieje sie dalej potrzebujemy wejsc do contenera z aplikacja
+Żeby zobaczyć co dzieje się dalej potrzebujemy wejść do kontenera z aplikacja
 
 docker ps -a| grep nginx-hello
 
